@@ -113,6 +113,7 @@ main {
   margin: auto;
   flex-direction: column;
   margin: 15px;
+  padding-bottom: 70px;
 }
 
 .profil {
@@ -143,13 +144,13 @@ main {
 .offer {
   display: flex;
   margin: auto;
+  justify-content: center;
   margin-top: 15px;
   font-size: 20px;
 }
 
 .btn1 {
   margin-right: 15px;
-  margin-bottom: 60px;
   padding: 8px 20px 10px 20px;
   border: 2px;
   background-color: var(--couleur-fond-noir);
@@ -158,7 +159,6 @@ main {
   cursor: pointer;
   outline: none;
   transition: all 0.2s ease;
-
 }
 
 .btn1:hover {
@@ -166,43 +166,47 @@ main {
   color: var(--couleur-fond-noir);
   background-color: var(--couleur-text);
   transform: translateY(-5px);
-
 }
 
-.content {
-  display: flex;
-  margin-bottom: 30%;
-  bottom: 10%;
-}
-
-.nav-end {
-  padding: 10px 30px 10px 30px;
+.pre-footer-links {
+  background: white;
+  padding: 10px 15px;
+  margin: 0 auto;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
   border-radius: 10px;
-  position: absolute;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  overflow-x: auto; 
+  white-space: nowrap;
+  max-width: 95%;
 }
 
-.nav-end ul {
-  display: flex;
-  list-style-type: none; /* Retirer les puces de la liste */
-  padding: 0; /* Retirer le padding par défaut */
+.pre-footer-links ul {
+  display: inline-flex;
+  gap: 12px;
+  padding: 0;
   margin: 0;
-  list-style-type: disc;
+  list-style: none;
 }
 
-.nav-end li {
-  margin-right: 10px;
+.pre-footer-links li {
+  flex-shrink: 0;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
 }
 
-.nav-end a {
+.pre-footer-links a {
   text-decoration: none;
-  font-size: 6px;
-  list-style-type: disc;
-  color: gray;
+  color: inherit;
+  margin-left: 4px;
 }
 
-.nav-end a:hover {
+.pre-footer-links a:hover {
   color: orange;
-}
+} 
 
 /* Footer */
 
@@ -319,6 +323,7 @@ main {
     gap: 30px;
     padding: 40px 20px;   
     text-align: center;
+    padding-bottom: 90px;
   }
 
    .profil {
@@ -340,7 +345,6 @@ main {
      
     .offer {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       margin-top: 10px;
       gap: 20px;
@@ -355,6 +359,36 @@ main {
       font-size: 1.2rem;
       font-weight: bold;
     }
+
+    .pre-footer-links {
+      background: white;
+      padding: 15px 30px;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: -40px; 
+      position: relative;
+      z-index: 2;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    
+    .pre-footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .pre-footer-links li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    
+    .pre-footer-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    
 
    /* Footer */
 
@@ -379,7 +413,7 @@ main {
     display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   }
 
    .img-end {
@@ -389,7 +423,7 @@ main {
 
    .line{
     width: 80%;
-    margin: 40px auto 20px;  /* Centre horizontalement */
+    margin: 40px auto 20px;  
     border: none;
     border-top: 2px solid #ccc;
    }
@@ -397,13 +431,13 @@ main {
    .icone {
     display: flex;
     justify-content: center;
-    gap: 25px; /* Espace entre les icônes */
+    gap: 25px; 
     margin-top: 30px;
     width: 7%;
   }
 
    .icone img {
-    width: 40px; /* ou la taille que tu veux */
+    width: 40px; 
     height: auto;
     transition: transform 0.3s ease-in-out;
    }
